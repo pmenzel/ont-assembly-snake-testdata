@@ -1,0 +1,6 @@
+ont-assembly-snake
+score-assemblies
+assemblies
+.snakemake
+fastq-ont/*filtlong*
+fastq-ont/*rasusa*
