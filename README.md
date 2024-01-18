@@ -4,7 +4,7 @@
 This repository contains sequencing data from ONT and Illumina for testing the [ont-assembly-snake](https://github.com/pmenzel/ont-assembly-snake) and [score-assemblies](https://github.com/pmenzel/score-assemblies) Snakemake workflows,
 described in the preprint [Snakemake Workflows for Long-read Bacterial Genome Assembly and Evaluation](https://www.preprints.org/manuscript/202208.0191/v1).
 
-The datasets are sub-sampled read sets from the ONT and Illumina sequencing data from Bio Sample XX of _Pandoraea commovens_,
+The datasets are subsampled read sets from the ONT and Illumina sequencing data of NCBI BioSample [SAMN30015177](https://www.ncbi.nlm.nih.gov/sra?LinkName=biosample_sra&from_uid=30015177) of _Pandoraea commovens_,
 from the publication [Outbreak of Pandoraea commovens Infections among Non–Cystic Fibrosis Intensive Care Patients, Germany, 2019–2021](https://wwwnc.cdc.gov/eid/article/29/11/23-0493_article).
 
 ### Setup
