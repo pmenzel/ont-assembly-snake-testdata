@@ -4,3 +4,5 @@ assemblies
 .snakemake
 fastq-ont/*filtlong*
 fastq-ont/*rasusa*
+score-assemblies-report.html
+score-assemblies-data

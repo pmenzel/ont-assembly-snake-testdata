@@ -46,8 +46,17 @@ For example:
 ```
 mkdir -p assemblies/example_flyehq4
 
-conda activate ont-assembly-snake
 
+# make assemblies
+conda activate ont-assembly-snake
 snakemake -s ont-assembly-snake/Snakefile --use-conda --cores 20
 
+# run score-assemblies
+conda activate score-assemblies
+snakemake -s score-assemblies/Snakefile --use-conda --cores 20
+
 ```
+
+The output files of `score-assemblies` are in the folder `score-assemblies-data`
+and a summary HTML report is in `score-assemblies-report.html`.
+
