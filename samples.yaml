@@ -1,0 +1,11 @@
+assemblies:
+  - example+filtlongMB500_flyehq4
+  - example+rasusaMB500_flyehq4
+  - example_unicycler
+  - example_canu
+  - example_miniasm
+  - example_raven2
+  - example_raven+racon2+medaka+pilon+homopolish
+  - example_raven+racon2+medaka+pilon+proovframe
+  - example_raven+racon2+medaka+polca
+  - example_raven+racon2+medaka+polypolish
