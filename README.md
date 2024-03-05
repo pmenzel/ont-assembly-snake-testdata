@@ -50,14 +50,14 @@ The assemblies that are to be generated are defined in the file `samples.yaml`.
 mkdir -p references references-protein
 wget https://ftp.ncbi.nlm.nih.gov/pub/datasets/command-line/LATEST/linux-amd64/datasets
 chmod +x datasets
-./datasets download genome accession GCF_902459615.1 --include genome
+./datasets download genome accession GCF_902459615.1 --include genome,protein
 unzip -p -j ncbi_dataset.zip 'ncbi_dataset/data/GCF_902459615.1/GCF_902459615.1_LMG_31010_genomic.fna' > references/GCF_902459615.1.fa
 unzip -p -j ncbi_dataset.zip 'ncbi_dataset/data/GCF_902459615.1/protein.faa' > references-protein/GCF_902459615.1.faa
 rm datasets ncbi_dataset.zip
 
 # run ont-assembly-snake
 conda activate ont-assembly-snake
-snakemake -s ont-assembly-snake/Snakefile --use-conda --cores 10 --configfile samples.yaml --config genome_size=5.9 --config medaka_model=r941_min_sup_g507
+snakemake -s ont-assembly-snake/Snakefile --use-conda --cores 10 --configfile samples.yaml --config genome_size=5.9 medaka_model=r941_min_sup_g507
 
 # run score-assemblies
 conda activate score-assemblies
